@@ -1,6 +1,8 @@
 # Laravel
-/bootstrap/compiled.php
+.idea/
+/.idea
 /vendor
+/bootstrap/compiled.php
 /Homestead
 .env.*
 
@@ -10,11 +12,8 @@ composer.lock
 
 # OS
 .DS_Store
-.idea/
 vagrant
 .vagrant
-/.idea
-/vendor
 .DS_Store
 Thumbs.db
 
