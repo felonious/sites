@@ -1,7 +1,23 @@
+# Laravel
+/bootstrap/compiled.php
+/vendor
+/Homestead
 .env.*
+
+# Composer
+composer.phar
+composer.lock
+
+# OS
+.DS_Store
+.idea/
+vagrant
+.vagrant
 /.idea
 /vendor
 .DS_Store
 Thumbs.db
-composer.lock
-composer.phar
+
+
+# Packages
+_ide_helpers.php
