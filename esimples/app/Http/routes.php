@@ -1,15 +1,12 @@
 <?php
+
 /**
  * Home
  */
-$router->get('/',
-             'HomeController@index');
+$router->get('/', 'HomeController@index');
 
 /**
  * Autenticacao
  */
-$router->controller('auth',
-                    'App\Http\Controllers\Auth\AuthController');
-
-$router->controller('password',
-                    'App\Http\Controllers\Auth\RemindersController');
+$router->resource('auth', 'App\Http\Controllers\Auth\AuthController');
+$router->resource('password', 'App\Http\Controllers\Auth\RemindersController');

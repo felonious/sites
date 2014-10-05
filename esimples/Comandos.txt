@@ -1,10 +1,32 @@
-Comandos:
+Commandos Vagrant:
+# iniciar o vagrant:
+vagrant up --provision
+
+# acessar homestead via ssh:
+vagrant ssh
+
+# parar o vagrant:
+vagrant halt
+
+# acessar o mysql:
+mysql -uhomestead -psecret
+show databases;
+show tables;
+
+
+
+
+Comandos Laravel:
 
 # gerar tabela
 php artisan make:migration create_users_table --create "users"
 
 # gerar o processo de autorizacao
 php artisan make:auth
+
 # ira gerar
 $router->controller('auth','App\Http\Controllers\Auth\AuthController');
 $router->controller('password','App\Http\Controllers\Auth\RemindersController');
+
+# gerar a tabelas no banco
+php artisan migrate
