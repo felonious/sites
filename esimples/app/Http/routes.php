@@ -1,14 +1,15 @@
 <?php
+/**
+ * Home
+ */
+$router->get('/',
+             'HomeController@index');
 
-/*
-|--------------------------------------------------------------------------
-| Application Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register all of the routes for an application.
-| It's a breeze. Simply tell Laravel the URIs it should respond to
-| and give it the Closure to execute when that URI is requested.
-|
-*/
+/**
+ * Autenticacao
+ */
+$router->controller('auth',
+                    'App\Http\Controllers\Auth\AuthController');
 
-$router->get( '/', 'HomeController@index' );
+$router->controller('password',
+                    'App\Http\Controllers\Auth\RemindersController');

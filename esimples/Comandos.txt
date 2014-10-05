@@ -1,0 +1,10 @@
+Comandos:
+
+# gerar tabela
+php artisan make:migration create_users_table --create "users"
+
+# gerar o processo de autorizacao
+php artisan make:auth
+# ira gerar
+$router->controller('auth','App\Http\Controllers\Auth\AuthController');
+$router->controller('password','App\Http\Controllers\Auth\RemindersController');
